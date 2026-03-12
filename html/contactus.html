@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Style+Script&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="../js/main.js"></script>
+</head>
+<body>
+  <header>
+    <section class="sub-header">
+      <div id="nav-placeholder"></div>
+     
+    </section>
+  </header>
+  <!--Contact us-->
+  <section class="location">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28319.70044197476!2d153.00245053586988!3d-27.470425084395796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915a045cf620bb%3A0x502a35af3de84c0!2sBrisbane%20City%20QLD!5e0!3m2!1sen!2sau!4v1749194531038!5m2!1sen!2sau"
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+  <section class="contact-us">
+    <div class="row">
+      <div class="contact-col">
+        <div>
+          <i></i>
+          <span>
+            <h5>Ashgrove, Chermside, Graceville and Westlake. </h5>
+            <p>Brisbane</p>
+          </span>
+        </div>
+        <div>
+          <i></i>
+          <span>
+            <h5>+1 012345678</h5>
+            <p>Monday to Saturday, 10AM to 10PM</p>
+          </span>
+        </div>
+        <div>
+          <i></i>
+          <span>
+            <h5>mlStrength@gmail.com</h5>
+            <p>Email us your query</p>
+          </span>
+        </div>
+      </div>
+      <form id="gymForm" novalidate>
+        <h2 class="form-title">Join Our Gym</h2>
+        <!-- Full Name -->
+        <div class="input-group">
+          <label for="name">Full Name</label>
+          <i class="fa fa-user"></i>
+          <input type="text" id="name" name="name" required pattern="[A-Za-z\s]{2,30}" maxlength="30"
+            placeholder="Full Name" title="Only letters and spaces allowed" />
+          <div class="error">Enter a valid name (letters only).</div>
+        </div>
+
+        <!-- Email -->
+        <div class="input-group">
+          <label for="email">Email</label>
+          <i class="fa fa-envelope"></i>
+          <input type="email" id="email" name="email" required placeholder="Email" title="Enter a valid email" />
+          <div class="error">Enter a valid email address.</div>
+        </div>
+
+        <!-- Age -->
+        <div class="input-group">
+          <label for="age">Age</label>
+          <i class="fa fa-calendar"></i>
+          <input type="number" id="age" name="age" min="16" max="70" required placeholder="Age"
+            title="Age must be between 16 and 70" />
+          <div class="error">Age must be between 16 and 70.</div>
+        </div>
+
+        <!-- Password -->
+        <div class="input-group">
+          <label for="password">Password</label>
+          <i class="fa fa-lock"></i>
+          <input type="password" id="password" name="password" required pattern=".{6,20}" maxlength="20"
+            placeholder="Password" title="6–20 characters" />
+          <div class="error">Password must be 6–20 characters.</div>
+        </div>
+
+        <!-- Membership -->
+        <div class="input-group">
+          <label for="membership">Membership Type</label>
+          <i class="fa fa-id-card"></i>
+          <select id="membership" name="membership" required>
+            <option value="">-- Select Membership --</option>
+            <option value="monthly">Monthly</option>
+            <option value="quarterly">Quarterly</option>
+            <option value="yearly">Yearly</option>
+          </select>
+          <div class="error">Please select a membership type.</div>
+        </div>
+
+        <!-- Gender -->
+        <div class="gender">
+          <label>Gender:</label>
+          <label><input type="radio" name="gender" value="male" required /> Male</label>
+          <label><input type="radio" name="gender" value="female" /> Female</label>
+          <label><input type="radio" name="gender" value="other" /> Other</label>
+          <div class="error">Please select your gender.</div>
+        </div>
+
+        <!-- Terms -->
+        <div class="terms">
+          <label>
+            <input type="checkbox" required />
+            I agree to the terms and conditions
+          </label>
+          <div class="error">You must agree to the terms.</div>
+        </div>
+
+        <!-- Submit -->
+        <div class="submit-row">
+          <input type="submit" value="Join Now" />
+        </div>
+
+        <!-- Help -->
+        <div class="help-link">
+          <a id="showVideo">Need help filling this form?</a>
+        </div>
+
+        <div class="help-video" id="videoBox">
+          <video controls>
+            <source
+              src="https://media.istockphoto.com/id/828998788/video/we-did-it.mp4?s=mp4-640x640-is&k=20&c=ccTI64vTR3s9egeULj-C25mdEmDXynOTc0U_ZVkhOuw="
+              type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </form>
+    </div>
+  </section>
+  <div id="footer-placeholder"></div>
+</body>
+</html>
